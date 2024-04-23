@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男性"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女性"
+            android:layout_marginStart="20dp"/>
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTicketType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupGender"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonAdult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成人票 (200元)"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兒童票 (150元)"
+            android:layout_marginTop="8dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="學生票 (100元)"
+            android:layout_marginTop="8dp"/>
+
+    </RadioGroup>
+
+    <!-- 張數标签 -->
+    <TextView
+        android:id="@+id/textViewQuantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupTicketType"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="張數："/>
+
+    <!-- EditText用于输入票的数量 -->
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupTicketType"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/textViewQuantityLabel"
+        android:hint="數量"
+        android:inputType="number"
+        android:paddingStart="8dp"
+        android:minWidth="100dp"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextQuantity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="提交"/>
+
+</RelativeLayout>
