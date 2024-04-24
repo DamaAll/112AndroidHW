@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".BuyTicketActivity">
+
+    <TextView
+        android:id="@+id/textViewGenderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="性別："
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGenderLabel"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女"
+            android:layout_marginStart="20dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewTicketTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="票種："
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/radioGroupGender"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupTicketType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTicketTypeLabel"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonAdult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成人 500元" />
+
+        <RadioButton
+            android:id="@+id/radioButtonChild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="孩童 250元"
+            android:layout_marginStart="20dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="學生 400元"
+            android:layout_marginStart="20dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewQuantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="張數："
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/radioGroupTicketType"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_toEndOf="@id/textViewQuantityLabel"
+        android:layout_alignBaseline="@id/textViewQuantityLabel"/>
+
+    <Button
+        android:id="@+id/buttonPurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="購票"
+        android:layout_below="@id/textViewQuantityLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"/>
+
+</RelativeLayout>
