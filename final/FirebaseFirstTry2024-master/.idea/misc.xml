@@ -1,0 +1,19 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/liu71/AndroidStudioProjects/FirebaseFirstTry/app/src/main/res/layout/activity_authentication.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/liu71/AndroidStudioProjects/FirebaseFirstTry/app/src/main/res/layout/activity_crashlytics.xml" value="0.27309782608695654" />
+        <entry key="..\:/Users/liu71/AndroidStudioProjects/FirebaseFirstTry/app/src/main/res/layout/activity_main.xml" value="0.27309782608695654" />
+        <entry key="..\:/Users/liu71/AndroidStudioProjects/FirebaseFirstTry/app/src/main/res/layout/activity_realtime_database.xml" value="0.1" />
+        <entry key="..\:/Users/liu71/AndroidStudioProjects/FirebaseFirstTry/app/src/main/res/layout/activity_remote_config.xml" value="0.27309782608695654" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
